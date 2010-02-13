@@ -1,0 +1,15 @@
+Source: oi-system-report
+Section: core
+Maintainer: Alexander V. Nikolaev <avn@daemon.hole.ru>
+Build-Depends: debhelper (>= 7)
+XCS-Cross-Host-Build-Depends: debhelper (>= 7)
+XCS-Cross-Build-Depends:
+Priority: optional
+Standards-Version: 3.8.3
+
+Package: oi-system-report
+Priority: optional
+Architecture: all
+Description: System report collector
+ This package contains scripts which collect information about
+ OpenInkpot installation.

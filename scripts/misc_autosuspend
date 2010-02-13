@@ -1,0 +1,13 @@
+#!/bin/sh
+cat <<EOF
+
+Autosuspend
+-----------
+EOF
+if [ -r /sys/power/autosuspend ]; then
+    STATUS=$(cat /sys/power/autosuspend)
+    echo "/sys/power/autosuspend = $STATUS"
+else
+    echo "/sys/power/autosuspend: Not found"
+fi
+

@@ -1,0 +1,7 @@
+#!/bin/sh
+cat <<EOF
+Packages installed in system
+============================
+
+EOF
+dpkg-query --showformat='${Package} ${Version} ${Status}\n' -W

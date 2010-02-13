@@ -1,0 +1,13 @@
+#!/bin/sh -e
+PLUGINS="${PLUGINS:-/usr/lib/system-report.d}"
+GROUP="$1"
+
+for each in $(run-parts --test ${PLUGINS}); do
+    if [ -z "${GROUP}" ]; then
+        ${each}
+    else
+        case "$(basename ${each})" in 
+            ${GROUP}_*) ${each} ;;
+        esac
+    fi
+done

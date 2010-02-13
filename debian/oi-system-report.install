@@ -1,0 +1,6 @@
+oi-system-report usr/bin
+scripts/packages usr/lib/system-report.d
+scripts/process usr/lib/system-report.d
+scripts/misc_autosuspend usr/lib/system-report.d
+scripts/kernel-modules usr/lib/system-report.d
+

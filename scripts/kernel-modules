@@ -1,0 +1,9 @@
+#!/bin/sh -e
+cat <<EOF
+
+Modules loaded into kernel
+==========================
+
+EOF
+lsmod
+
